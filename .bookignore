@@ -1,0 +1,15 @@
+# exclude files.
+# - Honkit
+.bookignore
+
+# - Git
+.gitattributes
+.gitignore
+
+# - Npm
+package.json
+package-lock.json
+
+# - Others
+provision.sh
+LICENSE

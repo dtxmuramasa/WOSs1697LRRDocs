@@ -1,0 +1,21 @@
+{
+	"language": "ja",
+	"plugins": [
+		"hide-published-with",
+		"-lunr",
+		"-search",
+		"search-pro-kui",
+		"uml",
+		"expandable-chapters",
+		"include-codeblock",
+		"code-editor",
+		"code"
+	],
+	"pluginsConfig": {
+		"uml": {
+			"format":	"svg",
+			"charset":	"UTF-8",
+			"nailgun":	false
+		}
+	}
+}

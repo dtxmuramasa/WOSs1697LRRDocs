@@ -6,6 +6,7 @@
 		"-search",
 		"search-pro-kui",
 		"uml",
+		"sequence",
 		"expandable-chapters",
 		"include-codeblock",
 		"code-editor",
@@ -16,6 +17,11 @@
 			"format":	"svg",
 			"charset":	"UTF-8",
 			"nailgun":	false
+		},
+		"sequence": {
+			"diagram": {
+				"theme": "simple"
+			}
 		}
 	}
 }

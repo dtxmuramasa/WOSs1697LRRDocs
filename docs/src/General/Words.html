@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>ドキュメント生成環境構築 · HonKit</title>
+        <title>用語集 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -69,8 +69,6 @@
 
     
     
-    <link rel="prev" href="Generally.html" />
-    
 
     </head>
     <body>
@@ -125,9 +123,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../General/Words.html">
+        <li class="chapter active" data-level="1.2.1" data-path="Words.html">
             
-                <a href="../General/Words.html">
+                <a href="Words.html">
             
                     
                     用語集
@@ -266,9 +264,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="Generally.html">
+        <li class="chapter " data-level="1.6.1" data-path="../StructEnvironments/Generally.html">
             
-                <a href="Generally.html">
+                <a href="../StructEnvironments/Generally.html">
             
                     
                     共通の環境構築
@@ -279,9 +277,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6.2" data-path="BuildDocument.html">
+        <li class="chapter " data-level="1.6.2" data-path="../StructEnvironments/BuildDocument.html">
             
-                <a href="BuildDocument.html">
+                <a href="../StructEnvironments/BuildDocument.html">
             
                     
                     ドキュメント生成環境構築
@@ -327,7 +325,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >ドキュメント生成環境構築</a>
+        <a href="../.." >用語集</a>
     </h1>
 </div>
 
@@ -342,43 +340,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ドキュメント生成環境構築">ドキュメント生成環境構築</h1>
-<h2 id="前提条件">前提条件</h2>
-<ol>
-<li><a href="Generally.html">共通の環境構築</a>が完了していることを前提とします。</li>
-<li>bashが動作するCLIが導入されていることを前提とします。</li>
-<li>クローン済みのリポジトリがローカルにあることを前提とします。</li>
-<li>以降の操作はローカルリポジトリのルートディレクトリ上で行います。</li>
-</ol>
-<h2 id="動作確認環境">動作確認環境</h2>
-<ul>
-<li>VSCode: 1.67.2</li>
-<li>GitBash(VSCodeTerminalから利用): mintty3.6.1</li>
-<li>bash: GNU bash, version 4.4.23(1)-release (x86_64-pc-msys)</li>
-</ul>
-<h2 id="プロビジョニングスクリプトの実行">プロビジョニングスクリプトの実行</h2>
-<ul>
-<li>プロビジョニングスクリプトを実行すると、自動的にドキュメント生成環境の構築が完了します。</li>
-<li>何らかの理由により完了できなかった場合は後述の「手動で環境を構築する」セクションの手順を実行してください。</li>
-</ul>
-<p>１．下記コマンドでプロビジョニングスクリプトを実行します。</p>
-<pre><code>$ bash provision.sh
-</code></pre><h2 id="手動で環境を構築する">手動で環境を構築する</h2>
-<ul>
-<li>このセクションの手順は前述の「プロビジョニングスクリプトの実行」セクションの手順が成功しなかった場合にのみ行ってください。</li>
-</ul>
-<h3 id="１．nodeモジュールのインストール">１．nodeモジュールのインストール</h3>
-<ul>
-<li>下記コマンドでnodeモジュールのインストールを行います。</li>
-<li>Honkit用のプラグインもここでインストールします。</li>
-</ul>
-<pre><code>$ npm install --save
-</code></pre><h3 id="２．ドキュメントのビルド">２．ドキュメントのビルド</h3>
-<ul>
-<li>ビルドを実行して環境構築の完了を確認します。</li>
-</ul>
-<pre><code>$ ./node_modules/.bin/honkit build ./ ./docs
-</code></pre>
+                                <h1 id="用語集">用語集</h1>
+<h2 id="兵数"><div id="soldiers_num">兵数</div></h2>
+<p><a href="#unit_num">ユニット数</a>と同義。</p>
+<h2 id="ユニット数"><div id="unit_num">ユニット数</div></h2>
+<p><a href="#soldiers_num">兵数</a>とも呼ばれる。<br></br>
+兵士ユニット1体につき設定されている数値。
+コストのようなもの。<br></br>
+兵士の種類によって設定されている数値が異なる。<br></br>
+例えば、狙撃兵は1体につきユニット数が1だが、決闘車は1体につきユニット数が10となっている。<br></br>
+各兵士ユニットごとのユニット数の詳細は<a href="../Battle/Soldiers.html">兵士解説</a>を参照。</p>
+<h2 id="負傷兵ユニット最大値"><div id="max_injured_unit_num">負傷兵ユニット最大値</div></h2>
+<p><a href="#max_injured_num">最大負傷兵数</a>と同義。
+ステータスの項目にはこの名称で記載されている。</p>
+<h2 id="最大負傷兵数"><div id="max_injured_num">最大負傷兵数</div></h2>
+<p>ステータスの項目では『<a href="#max_injured_unit_num">負傷兵ユニット最大値</a>』と記載されている。<br></br>
+病院に収まりきる<a href="#injured_unit">負傷兵</a>ユニット数の最大値のこと。<br></br>
+この数値を超える<a href="#injured_unit">負傷兵</a>が発生した場合、本来<a href="#lost_unit">損失</a>ではなかった兵士が治療を受けられない状態のため、<a href="#lost_unit">損失</a>してしまうようになる数値。</p>
+<h2 id="負傷兵"><div id="injured_unit">負傷兵</div></h2>
+<p>戦闘を経て負傷し、病院での治療を行わないと戦線復帰できない兵士。</p>
+<h2 id="損失兵"><div id="lost_unit">損失(兵)</div></h2>
+<p>戦闘を経て死亡し、消滅してしまった兵士。<br></br>
+<a href="#revive_prob">負傷兵転化率</a>の確立で<a href="#revive">蘇生</a>を行うことが可能。</p>
+
                                 
                                 </section>
                             
@@ -405,10 +389,6 @@
 
             
                 
-                <a href="Generally.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 共通の環境構築">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
                 
             
         
@@ -417,7 +397,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ドキュメント生成環境構築","level":"1.6.2","depth":2,"previous":{"title":"共通の環境構築","level":"1.6.1","depth":2,"path":"src/StructEnvironments/Generally.md","ref":"src/StructEnvironments/Generally.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-lunr","-search","search-pro-kui","uml","sequence","expandable-chapters","include-codeblock","code-editor","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sequence":{"diagram":{"theme":"simple"}},"code-editor":{},"code":{"copyButtons":true},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"svg","charset":"UTF-8","nailgun":false,"config":"classic"},"search-pro-kui":{},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"src/StructEnvironments/BuildDocument.md","mtime":"2024-05-10T12:08:40.819Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-09-08T06:10:44.885Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"用語集","level":"1.2.1","depth":2,"next":{"title":"戦闘","level":"1.3","depth":1,"ref":"","articles":[{"title":"兵士解説","level":"1.3.1","depth":2,"path":"src/Battle/Soldiers.md","ref":"src/Battle/Soldiers.md","articles":[]}]},"previous":{"title":"全般","level":"1.2","depth":1,"ref":"","articles":[{"title":"用語集","level":"1.2.1","depth":2,"path":"src/General/Words.md","ref":"src/General/Words.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-lunr","-search","search-pro-kui","uml","sequence","expandable-chapters","include-codeblock","code-editor","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sequence":{"diagram":{"theme":"simple"}},"code-editor":{},"code":{"copyButtons":true},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"svg","charset":"UTF-8","nailgun":false,"config":"classic"},"search-pro-kui":{},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"src/General/Words.md","mtime":"2024-09-08T03:51:12.378Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-09-08T06:10:44.885Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

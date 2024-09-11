@@ -1,8 +1,10 @@
 # Summary
 
 * [はじめに](/README.md)
-* 全般
+* ホワサバ全般
   * [用語集](/src/General/Words.md)
+* LightRogueRegion関連
+  * [同盟ルール](/src/Domestic/Rules.md)
 * 戦闘
 * ツール(試作型)
   * [ブーストタイミング計算ツール](https://dtxmuramasa.github.io/AoZTools/)

@@ -5,6 +5,11 @@
   * [用語集](/src/General/Words.md)
 * LightRogueRegion関連
   * [同盟ルール](/src/Domestic/Rules.md)
+  * [イベント情報](/src/Domestic/Events.md)
+    * [直近の開催予定](/src/Domestic/Events.md#直近のイベント予定)
+    * [熊狩](/src/Domestic/Events.md#熊狩り)
+    * [砦争奪戦](/src/Domestic/Events.md#砦争奪戦)
+    * [クレイジージョイ](/src/Domestic/Events.md#クレイジージョイ)
 * 戦闘
 * ツール(試作型)
   * [ブーストタイミング計算ツール](https://dtxmuramasa.github.io/AoZTools/)

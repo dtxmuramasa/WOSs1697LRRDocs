@@ -152,73 +152,9 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.3.1" data-path="src/Battle/Soldiers.html">
-            
-                <a href="src/Battle/Soldiers.html">
-            
-                    
-                    兵士解説
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
         <li class="chapter " data-level="1.4" >
-            
-                <span>
-            
-                    
-                    戦略・戦術
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.4.1" data-path="src/Tactics/Deffence.html">
-            
-                <a href="src/Tactics/Deffence.html">
-            
-                    
-                    防衛戦の指針について
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2" data-path="src/Tactics/TATD.html">
-            
-                <a href="src/Tactics/TATD.html">
-            
-                    
-                    TA・TD講座
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
             
                 <span>
             
@@ -232,7 +168,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" >
+        <li class="chapter " data-level="1.4.1" >
             
                 <a target="_blank" href="https://dtxmuramasa.github.io/AoZTools/">
             
@@ -250,7 +186,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter " data-level="1.5" >
             
                 <span>
             
@@ -264,7 +200,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="src/StructEnvironments/Generally.html">
+        <li class="chapter " data-level="1.5.1" data-path="src/StructEnvironments/Generally.html">
             
                 <a href="src/StructEnvironments/Generally.html">
             
@@ -277,12 +213,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="src/StructEnvironments/BuildDocument.html">
+        <li class="chapter " data-level="1.5.2" data-path="src/StructEnvironments/BuildDocument.html">
             
                 <a href="src/StructEnvironments/BuildDocument.html">
             
                     
                     ドキュメント生成環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="src/StructEnvironments/Plugins.html">
+            
+                <a href="src/StructEnvironments/Plugins.html">
+            
+                    
+                    プラグインリスト
             
                 </a>
             
@@ -340,86 +289,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="はじめに">はじめに</h1>
-<h2 id="honkittemplateとは"><a href="https://github.com/dtxmuramasa/HonkitTemplate" target="_blank">HonkitTemplate</a>とは</h2>
+                                <h1 id="lightrogueregion-情報まとめ">LightRogueRegion 情報まとめ</h1>
+<h2 id="本ドキュメントについて">本ドキュメントについて</h2>
 <ul>
-<li><a href="https://github.com/honkit/honkit" target="_blank">Honkit</a>でプログラムの仕様書や設計書を作成するために必要なツール、プラグインをバンドルしたプロジェクトのテンプレートです。</li>
-<li>もともとは<a href="https://github.com/dtxmuramasa/GitbookTemplate" target="_blank">GitbookTemplate</a>でしたが、本体の<a href="https://github.com/GitbookIO/gitbook" target="_blank">Gitbook</a>がLegacyとなり新しい環境に導入できなくなったため、Forkされた<a href="https://github.com/honkit/honkit" target="_blank">Honkit</a>に差し替えたものになります。<a href="https://twitter.com/azu_re" target="_blank">azu</a>様、ありがとうございます！</li>
-</ul>
-<h2 id="注意事項">注意事項</h2>
-<ul>
-<li><a href="https://github.com/dtxmuramasa/HonkitTemplate" target="_blank">本テンプレート</a>は日本語プロジェクトでの使用しか考慮していません。<ul>
-<li>This template is only considered for use in Japanese projects.</li>
-</ul>
-</li>
-<li>本テンプレートはWindows環境に合わせて作成しています。</li>
-<li><a href="https://github.com/honkit/honkit" target="_blank">Honkit</a>の成り立ちから、ところどころにGitbookの表記があります。</li>
-</ul>
-<h2 id="ドキュメント生成環境構築手順">ドキュメント生成環境構築手順</h2>
-<ul>
-<li>詳しくは<a href="src/StructEnvironments/BuildDocument.html">ドキュメント生成環境構築</a>をご覧ください。</li>
-</ul>
-<h2 id="ドキュメントの生成、更新コマンド">ドキュメントの生成、更新コマンド</h2>
-<pre><code>$ npm run build
-</code></pre><h2 id="ドキュメント閲覧サーバ起動コマンド">ドキュメント閲覧サーバ起動コマンド</h2>
-<ul>
-<li>下記コマンド実行後、<a href="http://localhost:4000" target="_blank">http://localhost:4000</a>で確認できます。</li>
-</ul>
-<pre><code>$ npm run serve
-</code></pre><h2 id="導入プラグイン">導入プラグイン</h2>
-<ul>
-<li>まだ<a href="https://github.com/honkit/honkit" target="_blank">Honkit</a>に移行後、完全な互換性があるか確認できていません。</li>
-<li>hide-published-with<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-hide-published-with" target="_blank">https://www.npmjs.com/package/gitbook-plugin-hide-published-with</a></li>
-<li>Gitbookへのpublishボタンを消します。</li>
-<li>リポジトリなどは残っていないが、機能はする模様。</li>
-</ul>
-</li>
-<li>-lunr, -search<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-lunr" target="_blank">https://www.npmjs.com/package/gitbook-plugin-lunr</a></li>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-search" target="_blank">https://www.npmjs.com/package/gitbook-plugin-search</a></li>
-<li>標準搭載されている検索エンジンを無効化します。</li>
-</ul>
-</li>
-<li>search-pro-kui<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-search-pro-kui" target="_blank">https://www.npmjs.com/package/gitbook-plugin-search-pro-kui</a></li>
-<li>あらゆるutf-8文字の検索に高度に対応した検索エンジンプラグイン。</li>
-<li>これを導入しないと日本語の部分検索が一部うまくいかないことがある。<ul>
-<li>例えば「環境構築」での検索で引っかかる文書が「構築」では引っかからなかったりなど。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>uml<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-uml" target="_blank">https://www.npmjs.com/package/gitbook-plugin-uml</a></li>
-<li>plantUMLを扱うためのプラグイン。</li>
-</ul>
-</li>
-<li>expandable-chapters<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-expandable-chapters" target="_blank">https://www.npmjs.com/package/gitbook-plugin-expandable-chapters</a></li>
-<li>サイドバーのメニューをCollapse/Expandできるツリービューにするプラグイン。</li>
-</ul>
-</li>
-<li>include-codeblock<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-include-codeblock" target="_blank">https://www.npmjs.com/package/gitbook-plugin-include-codeblock</a></li>
-<li>ファイルの内容を展開してくれるマクロを提供するプラグイン。</li>
-</ul>
-</li>
-<li>code-editor<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-code-editor" target="_blank">https://www.npmjs.com/package/gitbook-plugin-code-editor</a></li>
-<li>よくあるコードエディタとコードの実行結果が見られるアレ。</li>
-</ul>
-</li>
-<li>code<ul>
-<li><a href="https://www.npmjs.com/package/gitbook-plugin-code" target="_blank">https://www.npmjs.com/package/gitbook-plugin-code</a></li>
-<li>複数行のコード記述に行数を表示してくれるプラグイン。</li>
-</ul>
-</li>
-</ul>
-<h2 id="ライセンス">ライセンス</h2>
-<ul>
-<li>本テンプレートは<a href="https://github.com/honkit/honkit" target="_blank">Honkit</a>のライセンスに準じています。</li>
-<li><a href="https://github.com/dtxmuramasa/HonkitTemplate/blob/main/LICENSE" target="_blank">Apache License 2.0全文</a></li>
+<li><a href="https://x.com/WOS_Japan" target="_blank">ホワイトアウトサバイバル</a>の1697鯖、LightRogueRegionの情報共有ページです。</li>
+<li>部外秘だよ！</li>
 </ul>
 
                                 
@@ -456,7 +330,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"はじめに","level":"1.1","depth":1,"next":{"title":"全般","level":"1.2","depth":1,"ref":"","articles":[{"title":"用語集","level":"1.2.1","depth":2,"path":"src/General/Words.md","ref":"src/General/Words.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-lunr","-search","search-pro-kui","uml","sequence","expandable-chapters","include-codeblock","code-editor","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sequence":{"diagram":{"theme":"simple"}},"code-editor":{},"code":{"copyButtons":true},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"svg","charset":"UTF-8","nailgun":false,"config":"classic"},"search-pro-kui":{},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2024-05-10T12:08:40.196Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-09-08T06:10:44.885Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"はじめに","level":"1.1","depth":1,"next":{"title":"全般","level":"1.2","depth":1,"ref":"","articles":[{"title":"用語集","level":"1.2.1","depth":2,"path":"src/General/Words.md","ref":"src/General/Words.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["hide-published-with","-lunr","-search","search-pro-kui","uml","sequence","expandable-chapters","include-codeblock","code-editor","code"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sequence":{"diagram":{"theme":"simple"}},"code-editor":{},"code":{"copyButtons":true},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"uml":{"format":"svg","charset":"UTF-8","nailgun":false,"config":"classic"},"search-pro-kui":{},"include-codeblock":{"check":false,"edit":false,"lang":"","fixlang":false,"template":"default","theme":"chrome","unindent":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"README.md","mtime":"2024-09-11T06:53:31.784Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-09-11T06:53:48.774Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
